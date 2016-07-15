@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.RecyclerView;
@@ -42,9 +45,17 @@ public class ArticleListActivity extends ActionBarActivity implements
         setContentView(R.layout.activity_article_list);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Typeface tf = Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf");
 
-
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+        CollapsingToolbarLayout mCollapsingToolbarLayout =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        mCollapsingToolbarLayout.setCollapsedTitleTextColor(
+                ContextCompat.getColor(ArticleListActivity.this, android.R.color.white));
+        mCollapsingToolbarLayout.setTitle(getResources().getString(R.string.app_name));
+        mCollapsingToolbarLayout.setCollapsedTitleTypeface(tf);
+        mCollapsingToolbarLayout.setExpandedTitleTypeface(tf);
+        mCollapsingToolbarLayout.setExpandedTitleColor(
+                ContextCompat.getColor(ArticleListActivity.this, android.R.color.transparent));
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
