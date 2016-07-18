@@ -17,7 +17,7 @@ android {
         applicationId "optimist.mechanic.hnmn3.xyz_reader"
         minSdkVersion 14
         targetSdkVersion 24
-        versionCode 1
+        versionCode 3
         versionName "1.0"
     }
     buildTypes {
