@@ -133,9 +133,11 @@ public class ArticleDetailFragment extends Fragment implements
         bindViews();
         updateStatusBar();
 
-        /*Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.toolbar_collapse1);
+    /*    Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.toolbar);
+        toolbar.setTitle(null);
         AppCompatActivity appCompatActivity = (AppCompatActivity) getActivity();
-        appCompatActivity.setSupportActionBar(toolbar);*/
+        appCompatActivity.setSupportActionBar(toolbar);
+        appCompatActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(false);*/
         return mRootView;
     }
 
