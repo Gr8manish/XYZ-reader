@@ -21,3 +21,5 @@ This project gives an opportunity to improve an app’s design, a vital skill fo
 
 ---
 
+![alt tag](https://github.com/Gr8manish/XYZ-reader/blob/master/Screenshots/XYZ_one.png "XYZ Reader") ![alt tag](https://github.com/Gr8manish/XYZ-reader/blob/master/Screenshots/XYZ_two.png "XYZ Reader")![alt tag](https://github.com/Gr8manish/XYZ-reader/blob/master/Screenshots/XYZ_three.png "XYZ Reader")
+
